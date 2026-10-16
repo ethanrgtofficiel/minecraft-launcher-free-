@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger Minecraft Gratuitement</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #111;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #fff;
+            box-sizing: border-box;
+            padding: 40px 20px;
+        }
+
+        /* Titre principal Rainbow */
+        h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            margin: 0 0 25px 0;
+            background: linear-gradient(
+                to right, 
+                #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000
+            );
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: defilementCouleur 3s linear infinite;
+        }
+
+        /* Bloc d'instructions */
+        .instructions {
+            max-width: 800px;
+            font-size: 1.25rem;
+            line-height: 1.6;
+            text-align: center;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 25px;
+            border-radius: 8px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* Séparation stricte de 3 lignes en CSS avant le bouton */
+        .espace-bouton {
+            margin-top: 4.5rem;
+        }
+
+        /* Style Rainbow pour le bouton de téléchargement */
+        .btn-install {
+            display: inline-block;
+            padding: 15px 50px;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #fff;
+            background: linear-gradient(
+                to right, 
+                #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3, #ff0000
+            );
+            background-size: 200% auto;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            text-transform: uppercase;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.6);
+            animation: defilementCouleur 3s linear infinite;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+
+        .btn-install:active {
+            transform: scale(0.96);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+        }
+
+        @keyframes defilementCouleur {
+            0% { background-position: 0% center; }
+            100% { background-position: 200% center; }
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2.2rem; }
+            .instructions { font-size: 1.05rem; padding: 15px; }
+            .espace-bouton { margin-top: 3rem; }
+            .btn-install { font-size: 1.3rem; padding: 12px 35px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Titre Rainbow -->
+    <h1>télécharger minecraft gratuitement</h1>
+
+    <!-- Vos instructions -->
+    <div class="instructions">
+        Téléchargez ce fichier pour avoir Minecraft avec toutes les versions que vous voulez. Une fois le fichier ZIP téléchargé, faites un clic droit dessus et cliquez sur <strong>"Extraire tout"</strong>. Quand c'est fait, ouvrez le nouveau dossier qui vient de se créer, descendez jusqu'à trouver le fichier <strong>PrismLauncher.exe</strong> (qui possède une icône multicolore). Double-cliquez dessus, choisissez votre langue, puis continuez jusqu'au menu principal pour installer n'importe quelle version. Cliquez sur le bouton ci-dessous pour lancer le téléchargement.
+    </div>
+
+    <!-- Le bouton pointe sur le serveur officiel pour contourner la limite de taille GitHub -->
+    <div class="espace-bouton">
+        <a href="https://github.com" class="btn-install">Télécharger</a>
+    </div>
+
+</body>
+</html>
